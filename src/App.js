@@ -2,10 +2,11 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
+import Chambres from './components/pages/Chambres';
 
 import Acceuil from './components/pages/Acceuil';
-import Produits from './components/pages/Produits';
+import Apropos from './components/pages/Apropos';
+import Hotel from './components/pages/Hotel';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Acceuil} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Produits} />
+          <Route path='/chambres' component={Chambres} />
+          <Route path='/apropos' component={Apropos} />
+          <Route path='/hotel' component={Hotel} />
         </Switch>
       </Router>
     </>

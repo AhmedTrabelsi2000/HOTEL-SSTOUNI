@@ -8,6 +8,9 @@ function Acceuil() {
   return (
     <>
       <HeroSection />
+      <div style={{ width: '100%', overflow: 'hidden' }}>
+        <img src={process.env.PUBLIC_URL + '/images/chiffre.jpg'} style={{ width: '100%' }} alt="Image d'accueil" />
+      </div>
       <Cards />
       <Footer />
     </>

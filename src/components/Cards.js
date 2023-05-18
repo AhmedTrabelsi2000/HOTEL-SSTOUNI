@@ -5,36 +5,33 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Chambres, restau, bar, rooftop</h1>
+     
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/chambre.jpg'
+              src='images/chambre1.jpg'
               text='Description des chambres'
               label='Chambre'
-              path='/services'
+              path='/chambres'
+              
             />
+            
             <CardItem
-              src='images/restau.jpg'
+              src='images/restau1.jpg'
               text='Description des restaurants'
               label='Restaurant'
-              path='/services'
+              path='/hotel'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/bar.jpg'
+              src='images/bar1.jpg'
               text='description bar'
               label='bar'
-              path='/services'
+              path='/hotel'
             />
-            <CardItem
-              src='images/rooftop.jpg'
-              text='description du rooftop'
-              label='Rooftop'
-              path='/products'
-            />
+            
           </ul>
         </div>
       </div>

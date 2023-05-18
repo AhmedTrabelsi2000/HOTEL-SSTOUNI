@@ -8,7 +8,6 @@ function HeroSection() {
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>BIENVENUE </h1>
       <p>A notre site web</p>
-
     </div>
   );
 }

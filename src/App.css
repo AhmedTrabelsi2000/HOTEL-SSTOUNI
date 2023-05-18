@@ -6,9 +6,9 @@
 }
 
 .home,
-.services,
-.products,
-.sign-up {
+.chambres,
+.apropos,
+.hotel {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -16,14 +16,68 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('/images/img-2.jpg');
+.chambres {
+  background-image: url('/images/apropos.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  text-align: center;
 }
+
+.slideshow {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: slideIn 0.2s ease-in-out forwards;
+}
+
+.slide.active {
+  opacity: 1;
+  animation: fade-in-slide-up 0.2s ease-in-out forwards;
+}
+
+.slide:nth-child(1) .chambres {
+  background-image: url('/images/chambre.jpg');
+}
+
+.slide:nth-child(2) .chambres {
+  background-image: url('/images/dondon.jpg');
+}
+
+.slide:nth-child(3) .chambres {
+  background-image: url('/images/bar.jpg');
+}
+
+@keyframes fade-in-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 
 /* .acceuil {
   background-image: url('/images/dondon.jpg');
@@ -34,20 +88,46 @@
   font-size: 400px;
 } */
 
-.products {
-  background-image: url('/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url('/images/img-8.jpg');
+.apropos {
+  background-image: url('/images/dondon.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+/*.hotel {
+  background-image: url('/images/bar.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+
+}*/
+
+.classification {
+  text-align: center;
+  color: rgb(104, 98, 98);
+  background: #f7f7e4;
+}
+
+.resto {
+  text-align: left;
+  color: rgb(126, 124, 124);
+  background: #f7f7e4;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.img_resto {
+  display: flex;
+  background: #f7f7e4;
+  justify-content: center;
+  padding-top: 50px;
+}
+.h11 {
+  color: #5a5a55;
+  text-align: center;
 }
