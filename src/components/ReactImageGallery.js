@@ -2,14 +2,13 @@ import React, {useState} from 'react';
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 const images = [
-  'images/bar6.jpg',
-    
-    'images/bar1.jpg',
-    'images/bar3.jpg',
-    'images/bar4.jpg',
-    'images/bar5.jpg',
-    'images/bar2.jpg',
-]
+  process.env.PUBLIC_URL + '/images/bar6.jpg',
+  process.env.PUBLIC_URL + '/images/bar1.jpg',
+  process.env.PUBLIC_URL + '/images/bar3.jpg',
+  process.env.PUBLIC_URL + '/images/bar4.jpg',
+  process.env.PUBLIC_URL + '/images/bar5.jpg',
+  process.env.PUBLIC_URL + '/images/bar2.jpg',
+];
 
 function ReactImageGallery() {
   const [data,setData] = useState({img: '', i: 0})

@@ -7,10 +7,29 @@ import Footer from '../Footer';
 function Acceuil() {
   return (
     <>
-      <HeroSection />
-      <div style={{ width: '100%', overflow: 'hidden' }}>
-        <img src={process.env.PUBLIC_URL + '/images/chiffre.jpg'} style={{ width: '100%' }} alt="Image d'accueil" />
-      </div>
+      <HeroSection />    
+      <div className="number-section">
+        <img src="images/apropos.jpg" alt="Mon Hôtel en chiffres" />
+        <div className="number-container">
+        
+          <div className="number">
+            <span>45</span>
+            <p>Chambres</p>
+          </div>
+          <div className="number">
+            <span>12</span>
+            <p>Mois d'ouverture</p>
+          </div>
+          <div className="number">
+            <span>4</span>
+            <p>Etoiles</p>
+          </div>
+          <div className="number">
+            <span>1</span>
+            <p>Lieu unique</p>
+          </div>
+        </div>
+      </div>  
       <Cards />
       <Footer />
     </>

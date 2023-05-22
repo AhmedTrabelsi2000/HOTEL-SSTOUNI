@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import '../../App.css';
 import Footer from '../Footer'
-import CardItem from './CardItem';
 import '../Footer.css';
 import ReactImageGallery from '../ReactImageGallery';
 import ReactImageGallery25 from '../ReactImageGallery25';

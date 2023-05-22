@@ -1,9 +1,7 @@
 import React from 'react';
 import '../../App.css';
-import CardItem from './CardItem';
 import Footer from '../Footer';
 import '../Footer.css';
-import ReactImageGallery from '../ReactImageGallery'
 import ReactImageGallery24 from '../ReactImageGallery24';
 
 
