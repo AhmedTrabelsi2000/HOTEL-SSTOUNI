@@ -11,7 +11,8 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/chambre1.jpg'
-              text='Description des chambres'
+              text="Plongez dans le luxe et le confort de notre chambre de l'hôtel .
+               Cette chambre spacieuse et élégamment décorée est conçue pour offrir une expérience de séjour exceptionnelle"
               label='Chambre'
               path='/chambres'
               
@@ -19,7 +20,8 @@ function Cards() {
             
             <CardItem
               src='images/restau1.jpg'
-              text='Description des restaurants'
+              text=" Notre restaurant combine une cuisine exquise,
+               un service attentif et une atmosphère élégante pour offrir à nos convives une expérience gastronomique inoubliable."
               label='Restaurant'
               path='/hotel'
             />
@@ -27,7 +29,9 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/bar1.jpg'
-              text='description bar'
+              text="Détendez-vous et savourez des moments de convivialité dans notre bar exclusif, 
+              situé au cœur de notre hôtel. Notre bar élégant offre une atmosphère chaleureuse et sophistiquée, idéale pour se retrouver entre amis, collègues ou en couple. Que vous souhaitiez déguster des cocktails artisanaux, 
+              des vins raffinés ou des boissons rafraîchissantes, notre bar propose une sélection exquise pour satisfaire tous les palais."
               label='bar'
               path='/hotel'
             />

@@ -4,6 +4,9 @@ import Footer from '../Footer'
 import '../Footer.css';
 import ReactImageGallery from '../ReactImageGallery';
 import ReactImageGallery25 from '../ReactImageGallery25';
+import ImageGallery from '../ImageGallery';
+import ImageGallery2 from '../ImageGallery2';
+
 
 export default function Chambres() {
   const chambresRef = useRef(null);
@@ -28,7 +31,7 @@ export default function Chambres() {
     
     
   ];
-
+   
   return (
     <div> <h1 ref={chambresRef} className='hotel '>
       <div className='slide active' style={{ backgroundImage: `url(${images[currentSlide]})` }}></div>
@@ -50,14 +53,15 @@ export default function Chambres() {
         <br></br>
           
       </div>
-      <ReactImageGallery/>
+      <ImageGallery/>
       <br></br>
       <h2 className='h11'>Laissez-vous séduire par notre restaurant où les saveurs se marient harmonieusement, 
 que ce soit dans nos plats gastronomiques,
  nos créations uniques ou notre atmosphère accueillante
         </h2>
          <br></br>
-         <ReactImageGallery25/>
+         <ImageGallery2/>
+         
       <Footer/>
     </div>
 
