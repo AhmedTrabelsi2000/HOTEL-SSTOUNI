@@ -17,6 +17,14 @@ function CustomImageGallery() {
       thumbnail: process.env.PUBLIC_URL + 'images/chambre3.jpg',
     },
     {
+      original: process.env.PUBLIC_URL + 'images/chambre7.jpg',
+      thumbnail: process.env.PUBLIC_URL + 'images/chambre7.jpg',
+    },
+    {
+      original: process.env.PUBLIC_URL + 'images/chambre9.jpg',
+      thumbnail: process.env.PUBLIC_URL + 'images/chambre9.jpg',
+    },
+    {
       original: process.env.PUBLIC_URL + 'images/chambre4.jpg',
       thumbnail: process.env.PUBLIC_URL + 'images/chambre4.jpg',
     },
@@ -28,6 +36,7 @@ function CustomImageGallery() {
       original: process.env.PUBLIC_URL + 'images/chambre6.jpg',
       thumbnail: process.env.PUBLIC_URL + 'images/chambre6.jpg',
     },
+   
   ];
 
   return (
